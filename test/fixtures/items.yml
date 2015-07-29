@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  i_ID: 
+  Cat_id_id: 
+  quantityAvail: 1
+  priceunit: 1.5
+  description: MyString
+  state: MyString
+
+two:
+  i_ID: 
+  Cat_id_id: 
+  quantityAvail: 1
+  priceunit: 1.5
+  description: MyString
+  state: MyString
