@@ -1,1 +1,0 @@
-class Customer< User; end 
