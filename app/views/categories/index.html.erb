@@ -75,16 +75,16 @@
  <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
              
 </div>
-<%= link_to "Add A New Item", new_item_path, :class =>"btn btn-md btn-md btn-success " %>
+<%= link_to "Add A New Item", new_category_path, :class =>"btn btn-md btn-md btn-success " %>
 
 
-  <h1> Items List </h1>
+  <h1> Category List </h1>
 
   <table class="table">
     <tr>
       <th>Name</th>
-      <th>Available Quantity</th>
-      <th>Price</th>
+      <th>Parent Category</th>
+<!--       <th>Price</th> -->
       <!-- <th>Description</th> -->
       <!-- <th>State</th> -->
       <th>Show</th>
@@ -92,16 +92,14 @@
       <th>Delete</th>
     </tr>
 
-    <% @item.each do |item| %>
+    <% @category.each do |category| %>
     <tr>
-      <td><%= item.name %></td>
-      <td><%= item.available_quantity %></td>
-      <td><%= item.price_unit %></td>
-      <!-- <td><%= item.description %></td> -->
-      <!-- <td><%= item.state %></td> -->
-      <td><%= link_to 'Show', item_path(item) %></td>
-      <td><%= link_to 'Edit', edit_item_path(item) %></td>
-      <td><%= link_to 'Destroy', item_path(item),
+      <td><%= category.name %></td>
+      <td><%= category.parent_category_id %></td>
+
+      <td><%= link_to 'Show', category_path(category) %></td>
+      <td><%= link_to 'Edit', edit_category_path(category) %></td>
+      <td><%= link_to 'Destroy', category_path(category),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
     </tr>

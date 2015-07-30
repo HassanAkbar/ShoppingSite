@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     
 
      resources :items
+     resources :categories
 
      
   # The priority is based upon order of creation: first created -> highest priority.
